@@ -24,12 +24,12 @@ Enerbute/
 
 An indoor zone temperature prediction system powered by machine learning.
 
-Developed by [@menonng](https://github.com/menonng)
+Developed by <a href="https://github.com/menonng" target="_blank" rel="noopener noreferrer">@menonng</a>
 
 ### Built with
 
 - **Language:** Python
-- **Library:** [scikit-learn](https://scikit-learn.org/)
+- **Library:** <a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferrer">scikit-learn</a>
 - **Model:** `RandomForestRegressor` — an ensemble of decision trees that predicts zone temperature from weekday, hour, and minute inputs. Separate models are trained for weekdays and weekends to reflect different usage patterns.
 
 ### How to use
@@ -49,9 +49,9 @@ python arintelli.py
 
 ### Data Collection
 
-- **Sensor:** [Tapo T310](https://www.tp-link.com/kr/smart-home/smart-sensor/tapo-t310/) wireless temperature & humidity sensor × 13 units
+- **Sensor:** <a href="https://www.tp-link.com/kr/smart-home/smart-sensor/tapo-t310/" target="_blank" rel="noopener noreferrer">Tapo T310</a> wireless temperature & humidity sensor × 13 units
 - **Period:** June 12 – June 26, 2026
-- **Location:** [📍 View on Google Maps](https://maps.app.goo.gl/m62nWzfWMq5B6y246)
+- **Location:** <a href="https://maps.app.goo.gl/m62nWzfWMq5B6y246" target="_blank" rel="noopener noreferrer">📍 View on Google Maps</a>
 - **Setup:** The classroom was divided into **13 zones (Zone 0 – Zone 12)**, with one sensor placed at the center of each zone.
 
 ### Preprocessing
@@ -75,7 +75,7 @@ pip install pandas scikit-learn matplotlib tqdm numpy
 
 A 2D simulation environment for visualizing air conditioner behavior.
 
-Developed by [@samgakgidoong](https://github.com/samgakgidoong)
+Developed by <a href="https://github.com/samgakgidoong" target="_blank" rel="noopener noreferrer">@samgakgidoong</a>
 
 ### Simulation Layout
 
@@ -90,8 +90,8 @@ The simulator screen is split into two sides for direct comparison:
 
 | Color | Meaning |
 |---|---|
-|  Sky blue | Inactive particle (not currently activated) |
-|  Blue | Active particle (currently in motion / activated) |
+| 🔵 Sky blue | Inactive particle (not currently activated) |
+| 🔵 Blue | Active particle (currently in motion / activated) |
 
 ### Leveling System
 
@@ -109,7 +109,7 @@ Each zone (box) is assigned a level from **0 to 4** based on how far its tempera
 
 ### Built with
 
-- **Engine:** [Godot Engine](https://godotengine.org/)
+- **Engine:** <a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">Godot Engine</a>
 
 ### Files
 
