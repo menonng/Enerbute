@@ -1,2 +1,2 @@
-# Enerbute-Colloquium
-Project Repository for Enerbute Colloquium
+# Enerbute
+Project Repository for Team Enerbute and Team Strawberry Smoothie
