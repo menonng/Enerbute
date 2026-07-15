@@ -4,7 +4,7 @@ Project Repository for **Team Enerbute** and **Team Strawberry Smoothie**
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 Enerbute/
@@ -20,16 +20,25 @@ Enerbute/
 
 ---
 
-## 🌡️ conditioner
+##  conditioner — AI Temperature Prediction
 
-Indoor temperature prediction system using AI.
+An indoor zone temperature prediction system powered by machine learning.
+
+Developed by [@menonng](https://github.com/menonng)
+
+### Built with
+
+- **Language:** Python
+- **Library:** [scikit-learn](https://scikit-learn.org/)
+- **Model:** `RandomForestRegressor` — an ensemble of decision trees that predicts zone temperature from weekday, hour, and minute inputs. Separate models are trained for weekdays and weekends to reflect different usage patterns.
 
 ### How to use
 
-- **`arintelli.py`** — Run this file to launch the AI prediction model.
-  ```
-  python arintelli.py
-  ```
+Run the following command to launch the AI prediction interface:
+
+```
+python arintelli.py
+```
 
 ### Folders
 
@@ -38,11 +47,53 @@ Indoor temperature prediction system using AI.
 | `data_prep/` | Preprocessed sensor data, ready for model training |
 | `data/` | Raw sensor data (original, unprocessed) |
 
+### Requirements
+
+```
+pip install pandas scikit-learn matplotlib tqdm numpy
+```
+
 ---
 
-## 🖥️ AirconSimulator  — 2D Air Conditioner Simulator
+##  AirconSimulator — 2D Air Conditioner Simulator
 
 A 2D simulation environment for visualizing air conditioner behavior.
+
+Developed by [@samgakgidoong](https://github.com/samgakgidoong)
+
+### Simulation Layout
+
+The simulator screen is split into two sides for direct comparison:
+
+| Side | Description |
+|---|---|
+| **Left** | Personalized cooling system applied — each zone is cooled according to its individual target temperature |
+| **Right** | Conventional (uniform) cooling — standard air conditioning without zone-specific adjustment |
+
+### Air Particles
+
+| Color | Meaning |
+|---|---|
+|  Sky blue | Inactive particle (not currently activated) |
+|  Blue | Active particle (currently in motion / activated) |
+
+### Leveling System
+
+The text displayed at the top-left and top-right of each side represents the **variance of the level distribution** across all zones.
+
+Each zone (box) is assigned a level from **0 to 4** based on how far its temperature deviates from its target temperature. Higher levels indicate hotter conditions.
+
+| Level | Deviation from target | Direction |
+|---|---|---|
+| **Lv. 0** | ≥ 5°C | Too cold |
+| **Lv. 1** | 2°C – 5°C | Slightly cold |
+| **Lv. 2** | Within 2°C | ✅ Optimal |
+| **Lv. 3** | 2°C – 5°C | Slightly hot |
+| **Lv. 4** | ≥ 5°C | Too hot |
+
+### Built with
+
+- **Engine:** [Godot Engine](https://godotengine.org/)
 
 ### Files
 
@@ -67,13 +118,3 @@ Double-click **`AirconSimulator.exe`** to start the 2D simulator.
 
 > **Do not delete `AirconSimulator.pck`.**  
 > This file contains all resources (textures, scenes, scripts) required by the simulator. The application will fail to launch if it is missing.
-
----
-
-## 🔧 Requirements
-
-To run `arintelli.py`, the following Python packages are required:
-
-```
-pip install pandas scikit-learn matplotlib tqdm numpy
-```
