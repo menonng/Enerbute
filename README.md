@@ -30,7 +30,7 @@ Developed by [@menonng](https://github.com/menonng)
 
 - **Language:** Python
 - **Library:** [scikit-learn](https://scikit-learn.org/)
-- **Model:** `RandomForestRegressor` — an ensemble of decision trees that predicts zone temperature from weekday, hour, and minute inputs. Separate models are trained for weekdays and weekends to reflect different usage patterns.
+- **Model:** [`RandomForestRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) — an ensemble of decision trees that predicts zone temperature from weekday, hour, and minute inputs. Separate models are trained for weekdays and weekends to reflect different usage patterns.
 
 ### How to use
 
