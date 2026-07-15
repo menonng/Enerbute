@@ -30,7 +30,7 @@ Developed by [@menonng](https://github.com/menonng)
 
 - **Language:** Python
 - **Library:** [scikit-learn](https://scikit-learn.org/)
-- **Model:** [`RandomForestRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) — an ensemble of decision trees that predicts zone temperature from weekday, hour, and minute inputs. Separate models are trained for weekdays and weekends to reflect different usage patterns.
+- **Model:** `RandomForestRegressor` — an ensemble of decision trees that predicts zone temperature from weekday, hour, and minute inputs. Separate models are trained for weekdays and weekends to reflect different usage patterns.
 
 ### How to use
 
@@ -46,6 +46,22 @@ python arintelli.py
 |---|---|
 | `data_prep/` | Preprocessed sensor data, ready for model training |
 | `data/` | Raw sensor data (original, unprocessed) |
+
+### Data Collection
+
+- **Sensor:** [Tapo T310](https://www.tp-link.com/kr/smart-home/smart-sensor/tapo-t310/) wireless temperature & humidity sensor × 13 units
+- **Period:** June 12 – June 26, 2026
+- **Location:** [📍 View on Google Maps](https://maps.app.goo.gl/m62nWzfWMq5B6y246)
+- **Setup:** The classroom was divided into **13 zones (Zone 0 – Zone 12)**, with one sensor placed at the center of each zone.
+
+### Preprocessing
+
+Raw data was filtered by removing any row where:
+
+- Temperature ≥ **30°C**, or
+- Relative humidity ≥ **90%**
+
+Preprocessed data is stored in `data_prep/`.
 
 ### Requirements
 
